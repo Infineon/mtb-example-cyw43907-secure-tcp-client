@@ -4,7 +4,7 @@
 # Description: A simple secure TCP server for demonstrating TCP usage.
 # 
 #******************************************************************************
-# (c) 2019-2020, Cypress Semiconductor Corporation. All rights reserved.
+# (c) 2021-2023, Cypress Semiconductor Corporation. All rights reserved.
 #******************************************************************************
 # This software, including source code, documentation and related materials
 # ("Software"), is owned by Cypress Semiconductor Corporation or one of its

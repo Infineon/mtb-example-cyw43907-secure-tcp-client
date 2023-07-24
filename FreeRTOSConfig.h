@@ -1,7 +1,19 @@
-/*
+/******************************************************************************
+* File Name:   FreeRTOSConfig.h
+*
+* Description: This file contains the FreeRTOS configuration macros.
+*
+* Related Document: See README.md
+*
+*
+*******************************************************************************
+* $ Copyright 2021-2023 Cypress Semiconductor $
+*******************************************************************************/
+
+/******************************************************************************
  * FreeRTOS Kernel V10.4.3
  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
- * Copyright (C) 2019-2021 Cypress Semiconductor Corporation, or a subsidiary of
+ * Copyright (C) 2021-2023 Cypress Semiconductor Corporation, or a subsidiary of
  * Cypress Semiconductor Corporation.  All Rights Reserved.
  *
  * Updated configuration to support CR4.
@@ -25,7 +37,7 @@
  *
  * https://www.FreeRTOS.org
  * https://github.com/FreeRTOS
- * http://www.cypress.com
+ * http://www.infineon.com
  *
  */
 
@@ -163,10 +175,10 @@ header file. */
 
 /* Enable low power tickless functionality. The RTOS abstraction library
  * provides the compatible implementation of the vApplicationSleep hook:
- * https://github.com/cypresssemiconductorco/abstraction-rtos#freertos
+ * https://github.com/Infineon/abstraction-rtos#freertos
  * The Low Power Assistant library provides additional portable configuration layer
  * for low-power features supported by the CR4 core:
- * https://github.com/cypresssemiconductorco/lpa
+ * https://github.com/Infineon/lpa
  */
 extern void vApplicationSleep( uint32_t xExpectedIdleTime );
 #define portSUPPRESS_TICKS_AND_SLEEP( xIdleTime ) vApplicationSleep( xIdleTime )
@@ -187,7 +199,7 @@ extern void vApplicationSleep( uint32_t xExpectedIdleTime );
  * GCC toolchain: the application must provide the implementation for the required
  * newlib hook functions: __malloc_lock, __malloc_unlock, __env_lock, __env_unlock.
  * FreeRTOS-compatible implementation is provided by the clib-support library:
- * https://github.com/cypresssemiconductorco/clib-support
+ * https://github.com/Infineon/clib-support
  *
  * ARM/IAR toolchains: the application must provide the reent.h header to adapt
  * FreeRTOS's configUSE_NEWLIB_REENTRANT to work with the toolchain-specific C library.

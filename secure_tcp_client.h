@@ -5,7 +5,7 @@
 * client operation.
 *
 *******************************************************************************
-* $ Copyright 2021 Cypress Semiconductor $
+* $ Copyright 2021-2023 Cypress Semiconductor $
 *******************************************************************************/
 
 #ifndef SECURE_TCP_CLIENT_H_

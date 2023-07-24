@@ -5,7 +5,7 @@
 * client operation.
 *
 *******************************************************************************
-* $ Copyright 2021 Cypress Semiconductor $
+* $ Copyright 2021-2023 Cypress Semiconductor $
 *******************************************************************************/
 
 /* Header file includes. */
@@ -32,8 +32,8 @@
 /* Secure TCP client task header file. */
 #include "secure_tcp_client.h"
 
-/* lwIP related header files. */
-#include "cy_lwip.h"
+/* IP address related header files (part of the lwIP TCP/IP stack). */
+#include "ip_addr.h"     
 
 /* Wi-Fi credentials and TCP port settings header file. */
 #include "network_credentials.h"
